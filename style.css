@@ -1,0 +1,342 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,a,h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/***************  HEADER *************/
+
+.header-container {
+    background-color:  rgb(224, 224, 235);
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 115px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  }
+.header-logo {
+    width: 180px;
+    height: 195px;
+}
+
+/***************  NAVIGATION *************/
+
+.nav {
+ display: flex;
+ margin: 0;
+ list-style-type: none;
+ margin: 18px 0; 
+ justify-content: space-around;
+} 
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.top-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 450px;
+}
+
+/*************** VIDEO *************/
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: fill;
+}
+
+/***************  SUBTITLE CONTAINER ***********/
+
+.subtitle-container {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  padding: 0px 35px;
+}
+
+/*************** PORTFOLIO SECTION *************/
+
+.portfolio-section-container {
+   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-image: url("portfolio-background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 655px;
+  align-items: center;
+} 
+.portfolio-section-title {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.855);
+    font-size: 26px;
+    position: relative;
+}
+.portfolio-card, .portfolio-logo, .overlay {
+  /* height: 75%;
+  width: 92%; */
+  height: 295px;
+  width: 340px;
+}
+.portfolio-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.portfolio-logo {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 2px 2px 15px 10px rgb(133 133 133 / 30%);
+  position: absolute;
+}
+.portfolio-card:hover .overlay {
+  opacity: 1;
+ 
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(77, 77, 77);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay-upper-text {
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+.overlay-text {
+  background-color: green;
+  height: auto;
+  width: 70%;
+  padding: 8px;
+  align-self: center;
+  text-align: center;
+}
+
+/*************** ABOUT SECTION *************/
+
+.about-title {
+text-align: center;
+  color: white;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.855);
+  font-size: 26px;
+  position: relative;
+}
+.section-about-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.section-about-container:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url("about-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-text {
+ /* position: relative; */
+ text-align: center;
+ padding: 60px 80px;
+ font-weight: bold;
+ min-height: fit-content;
+ display: flex;
+ align-items: center;
+ width: 600px
+}
+
+/************** CONTACT SECTION *************/
+
+.contact-title {
+  color: white;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.855);
+  font-size: 26px;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+.contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+  }
+#subject {
+    resize: none;   
+}
+label {
+    color: rgb(255, 255, 255);
+    padding: 8px;
+}
+.submit-btn {
+    width: 95%;
+}
+.section-contact-container {
+  height: 465px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  align-items: center;
+  background-color: rgb(0,0,0);
+}
+
+/************ CONTACT SECTION ************/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+input,
+textarea {
+    width: 100%;
+    height: 35px;
+}
+label :placeholder{
+  color: white;
+}
+footer {
+    background-color: rgb(224, 224, 235);
+    color: black;
+    text-align: center;
+}
+.footer-icons-nav {
+    display: flex;
+    list-style-type: none;
+    width: 90px;
+    justify-content: space-between; 
+}
+.footer-icons-nav img {
+    width: 40px;
+    height: 35px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+.copyright-text {
+  font-size: 16px;
+  color: black;
+  font-weight: bolder;
+}
+
+/************  MEDIA QUERIES *************/
+
+  @media (min-width: 320px) { 
+    .portfolio-section-container { 
+       display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      color: white;
+      height: 655px;
+    }
+    .portfolio-logo, .overlay {
+      /* width: 60%;
+      height: 80%; */
+    }
+    .contact-form {
+      width: 355px;
+    }
+  }
+
+/************  MEDIUM SCREENS - tablets *************/
+
+  @media (min-width: 768px) {
+    .portfolio-logo, .overlay {
+      /* width: 50%;
+      height: 90%; */
+    }
+  .header-logo {
+    width: 180px;
+    height: 195px;
+  }
+  .about-section {
+    /* width: 80%; */
+  /* padding: 60px 125px; */
+  }
+  .contact-form {
+    width: 355px;
+  }
+}
+
+/************  BIG SCREENS *************/
+
+  @media (min-width: 960px) {
+    .portfolio-section-container {
+      padding: 2px 145px;
+      height: 655px;
+    }
+    .portfolio-logo, .overlay {
+      /* width: 50%;
+      height: 90%; */
+    }
+    .about-text {
+      /* width: 80%; */
+    } 
+  }
+
+/************  BIGGEST SCREENS *************/
+
+  @media (min-width: 1200px) {
+    .header-container {
+      height: 115px;
+    }
+    .portfolio-logo, .overlay {
+      width: 400px;
+      height: 360px;
+    }
+    .portfolio-section-container {
+      background-size: cover;
+      height: 810px;
+    }
+    .about-text {
+      /* width: 60%; */
+    } 
+    .section-contact-container {
+      height: 465px;
+      background-size: 100% 122%;
+      padding-top: 0px; 
+    }
+    .contact-form {
+      width: 430px;
+    }
+  }
